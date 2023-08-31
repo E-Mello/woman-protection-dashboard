@@ -23,7 +23,7 @@ const SkillCard = ({ title, description, image }: SkillCardProps) => (
     </div>
 );
 
-export default function AboutPage() {
+export default function SettingsPage() {
     const router = useRouter();
 
     const aboutText =

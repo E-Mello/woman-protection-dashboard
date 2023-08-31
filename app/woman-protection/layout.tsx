@@ -2,9 +2,12 @@
 
 // app/layout.tsx
 
-import { FiHome, FiInfo, FiMenu } from 'react-icons/fi';
+import { FiHome, FiInfo, FiMenu, FiSettings } from 'react-icons/fi';
 
+import { FaRegComments } from 'react-icons/fa'
 import Link from 'next/link';
+import { PiFiles } from 'react-icons/pi'
+import { RxDashboard } from "react-icons/rx";
 import { isActiveNavAtom } from '@/atoms/activeNavAtom';
 import { useAtom } from "jotai";
 import { useState } from 'react';
@@ -34,18 +37,42 @@ const Sidenav = () => {
           </Link>
         </li>
         <li className='flex'>
-          <Link href="/about">
+          <Link href="/woman-protection/dashboard">
             <div className="py-2 flex gap-4 align-middle">
-              <FiInfo className="flex mt-1" />
-              {isActiveNav && 'About'}
+              <RxDashboard className="flex mt-1" />
+              {isActiveNav && 'Dashboard'}
             </div>
           </Link>
         </li>
         <li className='flex'>
-          <Link href="/dashboard">
+          <Link href="/woman-protection/reports">
+            <div className="py-2 flex gap-4 align-middle">
+              <PiFiles className="flex mt-1" />
+              {isActiveNav && 'Relatórios'}
+            </div>
+          </Link>
+        </li>
+        <li className='flex'>
+          <Link href="/woman-protection/incidences">
             <div className="py-2 flex gap-4 align-middle">
               <FiInfo className="flex mt-1" />
-              {isActiveNav && 'Dashboard'}
+              {isActiveNav && 'Incidências'}
+            </div>
+          </Link>
+        </li>
+        <li className='flex'>
+          <Link href="/woman-protection/chat">
+            <div className="py-2 flex gap-4 align-middle">
+              <FaRegComments className="flex mt-1" />
+              {isActiveNav && 'Chat'}
+            </div>
+          </Link>
+        </li>
+        <li className='flex'>
+          <Link href="/woman-protection/settings">
+            <div className="py-2 flex gap-4 align-middle">
+              <FiSettings className="flex mt-1" />
+              {isActiveNav && 'Configuração'}
             </div>
           </Link>
         </li>

@@ -77,7 +77,7 @@ export default async function Index() {
             <span className="border-l rotate-45 h-6" />
             <NextJsLogo />
           </div>
-          <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
+          <p className="sr-only">Supabase and Next.js Starter Template</p>
           <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center my-12">
             The fastest way to start building apps with{' '}
             <strong>Supabase</strong> and <strong>Next.js</strong>
